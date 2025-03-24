@@ -1,5 +1,4 @@
-groups = ['HOT', 'Seventeen', 'Black Pink', 'NJZ']
-ratings = [1, 2, 3, 4]
-
-groups_rating = list(zip(groups, ratings))
-print(groups_rating)
+city = ['Incheon','Incheon','Incheon','Gimpo','Seoul','Seoul']
+# city = {'Incheon','Incheon','Incheon','Gimpo','Seoul','Seoul'}
+city = set(city)
+print(city)

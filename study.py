@@ -1,8 +1,9 @@
-array = [11, 9, -77, 8]
-for i in range(len(array)):
-    print(f"{array[i]:3} {id(array[i])}")
-import array
+def inters(l1, l2):
+    s1 = set(l1)
+    s2 = set(l2)
+    return list(s1 & s2)  # return list(s1.intersection(s2))
 
-arr = array.array('f', [11, 9, -77, 8])
-for i in range(len(arr)):
-    print(f"{arr[i]:3} {id(arr[i])}")
+
+l1 = [45, 5, 22, 31, 7, 19]
+l2 = [2, 1, 5, 22, 7, 38, 27, 19, 13, 41]
+print(inters(l1, l2))
